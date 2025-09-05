@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>URL Shortener</title>
-</head>
-<body>
-  <div class="container">
-    <h1>URL Shortener</h1>
-    <form id="shorten-form">
-      <div>
-        <label for="url">Enter URL:</label>
-        <input type="url" name="url" id="url" required>
-      </div>
-      <div>
-        <label for="shortCode">Enter Short Code:</label>
-        <input type="text" name="shortCode" id="shortCode" required>
-      </div>
-      <button type="submit">Shorten</button>
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>URL Shortener by Anushka Rikhari</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f517.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL Shortener</h1>
 
-    <h2>Shortened URLs</h2>
-    <ul id="shortened-urls"></ul>
-  </div>
+      <form id="shorten-form" class="shorten-form">
+        <label for="url" class="form-label">Enter URL:</label>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          class="form-input"
+          placeholder="https://example.com"
+          required
+        />
 
-  <script src="app.js"></script>
-</body>
+        <label for="alias" class="form-label">Custom Alias (optional):</label>
+        <input
+          type="text"
+          name="alias"
+          id="alias"
+          class="form-input"
+          placeholder="my-custom-link"
+        />
+
+        <button type="submit" class="form-button">Shorten</button>
+      </form>
+
+      <div
+        id="error-message"
+        style="color: red; margin-bottom: 15px; display: none;"
+      ></div>
+
+      <h2>Shortened URLs</h2>
+      <ul id="shortened-urls"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
