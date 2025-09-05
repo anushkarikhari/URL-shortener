@@ -1,0 +1,82 @@
+body {
+    font-family: 'urbanist', sans-serif;
+    background-color: rgb(217, 180, 190);
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.container {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: rgb(134, 85, 98);
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+    text-align: left;
+}   
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+input[type="url"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: rgb(134, 85, 98);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}   
+button:hover {
+    background-color: rgb(150, 100, 110);
+}   
+
+h2 {
+    color: rgb(99, 62, 72);
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}   
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}   
+li a {
+    color: #333;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}   
